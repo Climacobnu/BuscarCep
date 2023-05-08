@@ -66,30 +66,12 @@ public class Sobre extends JDialog {
 				link("https://www.republicavirtual.com.br/");
 			}
 		});
-		lblWebService.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		lblWebService.setForeground(SystemColor.textHighlight);
-		lblWebService.setBounds(122, 121, 210, 14);
-		getContentPane().add(lblWebService);
-
-		JButton btnYoutube = new JButton("");
-		btnYoutube.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				link("https://www.youtube.com/playlist?list=PLbEOwbQR9lqxVuDWNIrG57_JGcbIL3FWP");
-			}
-		});
-		btnYoutube.setToolTipText("Playlist");
-		btnYoutube.setIcon(new ImageIcon(Sobre.class.getResource("/img/youtube.png")));
-		btnYoutube.setHideActionText(true);
-		btnYoutube.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		btnYoutube.setBorder(null);
-		btnYoutube.setBackground(SystemColor.control);
-		btnYoutube.setBounds(50, 176, 48, 48);
-		getContentPane().add(btnYoutube);
+		
 
 		JButton btnGithub = new JButton("");
 		btnGithub.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				link("https://github.com/Climacobnu/cep");
+				link("https://github.com/Climacobnu/Buscarcep");
 			}
 		});
 		btnGithub.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
@@ -97,7 +79,7 @@ public class Sobre extends JDialog {
 		btnGithub.setIcon(new ImageIcon(Sobre.class.getResource("/img/github.png")));
 		btnGithub.setBackground(SystemColor.control);
 		btnGithub.setBorder(null);
-		btnGithub.setBounds(122, 176, 48, 48);
+		btnGithub.setBounds(50, 176, 48, 48);
 		getContentPane().add(btnGithub);
 
 	}
